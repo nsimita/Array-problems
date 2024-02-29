@@ -1,0 +1,11 @@
+#include <stdio.h>
+// array size=10 and store 2,4,6.....
+int main() {
+    int num[10];
+    int temp = 2; // take a temp and store the initial value
+    for (int i = 0; i <= 9; i = i ++) {
+        num[i] = temp;
+        temp = temp + 2;
+    }
+    return 0;
+}
