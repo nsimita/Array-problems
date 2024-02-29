@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main() {
+   int num[100], i, n;
+   printf("How many numbers: ");
+   scanf("%d",&n);
+   for(i= 0; i<=n-1; i++){
+        scanf("%d",&num[i]);
+   }
+   int min= num[0]; //let's assume that 0th base num is minimum
+   for(i=1; i<=n-1; i++){
+       //as we already assumed that 0th base is the min now we will compare other bases with num[0]
+       if(min>num[i]){
+           //we will check that num[1/2/..] are less than min or not if less than then min will be that number.
+           min=num[i];
+       }
+   }
+   printf("  min= %d" , min);
+   
+   
+    return 0;
+}
