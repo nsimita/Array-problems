@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+     int num[]= {10,30,2,15,28,5};
+     int i;
+     int value =15; 
+     int pos = -1;
+     printf("enter the value ");
+     scanf("%d",&value);
+     for(i=0; i<=6-1; i++){
+         if(value==num[i]){
+             pos= i+1;
+             break;
+         }
+     }
+     if(pos==-1){
+         printf("not found");
+     }
+     else{
+         printf("Position of %d is %d", value, pos);
+     }
+    return 0;
+}
