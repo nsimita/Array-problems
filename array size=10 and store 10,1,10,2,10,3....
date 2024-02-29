@@ -1,0 +1,18 @@
+#include <stdio.h>
+// array size=10 and store 10,1,10,2,10,3....
+int main() {
+    int num[10];
+    int i;
+    int temp = 1;
+    for (i = 0; i <= 10; i++) {
+        if (i % 2 == 0) {
+            num[i] = 10; //for even index it will print 10
+        }
+        else {
+            num[i] = temp; //we need a temp variable which value is 1 and store at num [i]
+            temp = temp + 1; // if it's not an even index then it will print this
+        }
+        printf("%d ", num[i]);
+    }
+    return 0;
+}
