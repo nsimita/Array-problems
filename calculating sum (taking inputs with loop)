@@ -1,0 +1,14 @@
+#include <stdio.h>
+printing inputs with loop
+int main() {
+    int num[5];
+    int i;
+    for(i=0; i<=4;i++){
+        scanf("%d",&num[i]);
+    }
+    printf("printing inputs: ");
+    for (i=0; i<=4; i++){
+        printf("%d\n",num[i]);
+    }
+    return 0;
+}
